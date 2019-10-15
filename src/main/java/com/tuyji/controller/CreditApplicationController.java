@@ -52,7 +52,7 @@ public class CreditApplicationController {
 				result, limit.toString());
 		creditApplicationService.addCreditApplication(createCreditApplicationNew);
 		
-//		smsService.sendSMS(creditApplication.getPhonenumber(), result);
+		smsService.sendSMS(creditApplication.getPhonenumber(), result);
 		
 		return createResponseEntity(limit);
 
